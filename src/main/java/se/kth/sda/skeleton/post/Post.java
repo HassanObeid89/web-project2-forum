@@ -1,6 +1,9 @@
 package se.kth.sda.skeleton.post;
 
+import se.kth.sda.skeleton.comment.Comment;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name ="posts")
@@ -15,6 +18,9 @@ public class Post {
 
     @Column(name="content")
     private String content;
+
+    @OneToMany
+    private List<Comment> comments;
 
     public Post() {
     }
