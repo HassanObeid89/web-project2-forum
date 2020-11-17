@@ -2,7 +2,7 @@ import React from "react";
 import Auth from "../../services/Auth";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
-import image from "../../assets/images/logo-1.png"
+import image from "../../assets/images/logo-1.png";
 
 function LoginPage() {
     const login = async (loginData) => {

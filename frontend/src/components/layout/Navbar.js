@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../../assets/images/logo-1.png"
+import image from "../../assets/images/logo-1.png";
+
 function Navbar({ onLogout }) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
             <a className="navbar-brand" href="/"> <img class="img" src={image} alt="Logo" /></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
