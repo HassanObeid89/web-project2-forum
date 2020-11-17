@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Raleway:wght@100;300&display=swap');
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #bec0be, #e6e7e7);
+  background: linear-gradient(to right, #d6d8d6, #f8fafa);
 }
 
 .App {
@@ -33,9 +34,88 @@ body {
 }
 
 .slogan {
-  font-size: 30px;
+  font-size: 40px;
   color: green;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-top: 40px;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Architects Daughter', cursive;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+} 
+
+.card-info {
+  text-align: center;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+.home-banner {
+  width: 100%;
+  margin-bottom:30px;
+  
+}
+
+.s-img {
+  width: 350px;
+  height:270px;
+}
+
+.box {
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding:0;
+  margin:0;
+}
+
+
+.s-img:hover {
+  transform: scale(0.8); 
+}
+.s-img{
+  transition: transform 1s;
+}
+
+
+/* Footer */
+.footer ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin: 18px;
+  list-style: none;
+}
+
+.footer li a {
+  color: darkgreen;
+  text-decoration: none;
+  font-size: 40px;
+  transition: all ease-in-out 250ms;    
+}
+
+.footer li a:hover {
+  color: #b9b9b9;
+}
+
+.footer h2 {
+  text-align:center;
+}
+
+.footer ul {
+  /* background-color: darkblue; */
+  text-align:center;
 }
 
