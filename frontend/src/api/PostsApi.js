@@ -19,7 +19,8 @@ class PostsApi {
 
     deletePost(id) {
         return Api.delete('/posts/'+id);
-    } 
+    }
+ 
 }
 
 export default new PostsApi();
