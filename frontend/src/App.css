@@ -22,18 +22,24 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: darkgreen;
 }
 
 .nav-item {
-  color: pink;
-  font-size: x-large;
+  
+  font-size: xx-large;
+  
 
 }
 
+.logout{
+  position: relative;
+  margin-right: 10px;
+}
+
 .img {
-  width: 60px;
-  height: 40px;
+  width: 120px;
+  height: 80px;
   margin-left:40px;
 }
 
@@ -46,27 +52,37 @@ body {
   text-align: center;
 }
 
+.card-body {
+  border: solid 3px darkgreen;
+  border-radius: 10px;
+}
+
 .card-title {
   text-align: center;
   color: rgb(58, 29, 29);
+  font-size: 26px;
 } 
 
 .card-info {
   text-align: center;
-  font-size: 18px;
+  padding: 0px;
+  font-size: 20px;
   font-family: 'Dosis', sans-serif;
-  color: green;
+  color: green; 
+  
 }
-
 .home-banner {
   width: 100%;
+  margin-top:10px;
   margin-bottom:30px;
+  border-radius: 15px;
   
 }
 
 .s-img {
-  width: 350px;
-  height:270px;
+  width: 389px;
+  height:300px;
+  margin: 12px;
   border: solid 5px darkgreen;
   border-radius: 10px;
 }
@@ -83,6 +99,7 @@ body {
   justify-content: space-around;
   padding:0;
   margin:0;
+  color: rgb(209, 61, 86);
 }
 
 
@@ -108,14 +125,15 @@ body {
 }
 
 .footer li a {
-  color: darkgreen;
+  color: rgb(209, 61, 86);
   text-decoration: none;
-  font-size: 40px;
+  font-size: 25px;
   transition: all ease-in-out 250ms;    
 }
 
-.footer li a:hover {
-  color: #b9b9b9;
+.footer li a:hover {  
+  color: darkgreen;
+  font-size: 150%;
 }
 
 .footer h2 {
@@ -125,5 +143,10 @@ body {
 .footer ul {
   /* background-color: darkblue; */
   text-align:center;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 

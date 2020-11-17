@@ -29,16 +29,22 @@ function HomePage() {
             </div>
             <div className="box">
                 <div>
-                <img src={image2} alt="global warming1" className="s-img" />
-                <p>Environment pollution</p>
+                <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" > 
+                <img src={image2} alt="global warming1" className="s-img" />                
+                <p>Air pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" > 
                 <img src={image3} alt="global warming2" className="s-img" />
-                <p>Environment pollution</p>
+                <p>Global warming</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" >
                 <img src={image4} alt="global warming3" className="s-img" />
                 <p>Environment pollution</p>
+                </a>
                 </div>
                 <div>
                 <img src={image5} alt="global warming4" className="s-img" />
@@ -66,16 +72,22 @@ function HomePage() {
                 <ul className="contact-list">
                 
                     <li>
-                        <a href="https://www.instagram.com/accounts/login/" target="blank" >
+                        <a href="https://www.instagram.com/accounts/login/" target="blank"> Instagram
                         <i className="fab fa-instagram-square"></i>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://www.facebook.com/" target="blank" >
+                        <a href="https://www.facebook.com/" target="blank" > Facebook
                         <i className="fab fa-facebook"></i>
                         </a>
-                    </li>      
+                    </li>  
+                    
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=AW4q0a2lfm8/" target="blank" > Youtube
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li> 
                 </ul>    
             </footer>  
 
