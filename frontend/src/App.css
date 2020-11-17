@@ -2,6 +2,8 @@
 body {
   min-height: 100vh;
   background: linear-gradient(to right, #d6d8d6, #f8fafa);
+  font-family: 'Dosis', sans-serif;
+  
 }
 
 .App {
@@ -23,8 +25,10 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.nav-item {
+  color: pink;
+  font-size: x-large;
+
 }
 
 .img {
@@ -37,19 +41,21 @@ body {
   font-size: 40px;
   color: green;
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Dosis', sans-serif;
   margin-top: 80px;
   text-align: center;
 }
 
 .card-title {
   text-align: center;
+  color: rgb(58, 29, 29);
 } 
 
 .card-info {
   text-align: center;
   font-size: 18px;
-  font-family: monospace;
+  font-family: 'Dosis', sans-serif;
+  color: green;
 }
 
 .home-banner {
@@ -61,6 +67,8 @@ body {
 .s-img {
   width: 350px;
   height:270px;
+  border: solid 5px darkgreen;
+  border-radius: 10px;
 }
 
 .box {

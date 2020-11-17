@@ -15,7 +15,7 @@ function HomePage() {
         <div>
             <div className="card">
                 <div className="card-body">
-                    <h4 className="card-title">Save Earth to Save Life!</h4>
+                    <h3 className="card-title">Save Earth to Save Life!</h3>
                     <p className="card-info">
                         Climate change is the big environmental problem that humanity will face over the next decade, 
                         but it isn't the only one. We'll take a look at some of them — from water shortages and loss of 
@@ -66,13 +66,13 @@ function HomePage() {
                 <ul className="contact-list">
                 
                     <li>
-                        <a href="https://www.instagram.com/accounts/login/" target="_blank" >
+                        <a href="https://www.instagram.com/accounts/login/" target="blank" >
                         <i className="fab fa-instagram-square"></i>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank" >
+                        <a href="https://www.facebook.com/" target="blank" >
                         <i className="fab fa-facebook"></i>
                         </a>
                     </li>      
