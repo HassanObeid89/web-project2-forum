@@ -1,6 +1,8 @@
 package se.kth.sda.skeleton.comment;
 
 
+import se.kth.sda.skeleton.post.Post;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,6 +14,9 @@ public class Comment {
     @Column(columnDefinition = "TEXT")
     private String body;
     private String authorName;
+
+    @ManyToOne
+    private Post post;
 
     public Comment() {
     }
