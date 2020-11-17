@@ -2,6 +2,7 @@ import React from "react";
 import Auth from "../../services/Auth";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
+import image from "../../assets/images/logo-1.png"
 
 function LoginPage() {
     const login = async (loginData) => {
@@ -23,8 +24,8 @@ function LoginPage() {
             <div className="container">
                 <div className="row mt-4">
                     <div className="col-md-6 " style={{ color: "white" }}>
-                        <h1>SDA</h1>
-                        <p>Starter template</p>
+                        <img  src={image} alt="Logo" />
+                        <p className="slogan">Save Earth to Save Life</p>
                     </div>
 
                     <div className="col-md-6">
