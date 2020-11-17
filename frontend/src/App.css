@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #2c3e50, #3498db);
+  background: linear-gradient(to right, #bec0be, #e6e7e7);
 }
 
 .App {
@@ -12,7 +12,7 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #293428;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,3 +25,17 @@ body {
 .App-link {
   color: #09d3ac;
 }
+
+.img {
+  width: 60px;
+  height: 40px;
+  margin-left:40px;
+}
+
+.slogan {
+  font-size: 30px;
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 40px;
+}
+
