@@ -28,7 +28,7 @@ function App() {
                 <div className="container mt-5">
                     <Switch>
                         <Route path="/posts">
-                            <PostsPage/>
+                            <PostsPage />
                         </Route>
                         
 

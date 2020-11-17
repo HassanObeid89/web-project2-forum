@@ -21,10 +21,11 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(Long id, String body, String authorName) {
+    public Comment(Long id, String body, String authorName,Post post) {
         this.id = id;
         this.body = body;
         this.authorName = authorName;
+        this.post = post;
     }
 
     public Long getId() {
@@ -49,5 +50,13 @@ public class Comment {
 
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
+    }
+
+    public Post getPost() {
+        return post;
+    }
+
+    public void setPost(Post post) {
+        this.post = post;
     }
 }
