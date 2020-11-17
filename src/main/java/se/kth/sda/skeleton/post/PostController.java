@@ -20,8 +20,8 @@ public class PostController {
         }
 
     @GetMapping("/{id}")
-    public Post getByID(@PathVariable Long postId) {
-        return postService.getById(postId)
+    public Post getByID(@PathVariable Long id) {
+        return postService.getById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
@@ -36,8 +36,8 @@ public class PostController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long postId) {
-        postService.delete(postId);
+    public void delete(@PathVariable Long id) {
+        postService.delete(id);
     }
 
 }
