@@ -32,11 +32,11 @@ function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
                 </div>
                 <div className="form-group">
                     <button
-                        className="btn btn-info" onClick={handleUpdateClick}>
-                        update
+                        className="btn-info" onClick={handleUpdateClick}>
+                        Update
                     </button>
                     <button
-                        className="btn btn-info" onClick={() => onDeleteClick(post)}>
+                        className="btn-info" onClick={() => onDeleteClick(post)}>
                         Delete
                     </button>
                     
