@@ -31,40 +31,48 @@ function HomePage() {
                 <div>
                 <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" > 
                 <img src={image2} alt="global warming1" className="s-img" />                
-                <p>Air pollution</p>
+                <p className="p-title">Air pollution</p>
                 </a>
                 </div>
                 <div>
-                <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" > 
+                <a href="https://www.youtube.com/watch?v=oJAbATJCugs" target="blank" > 
                 <img src={image3} alt="global warming2" className="s-img" />
-                <p>Global warming</p>
+                <p className="p-title">Global warming</p>
                 </a>
                 </div>
                 <div>
-                <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" >
+                <a href="https://www.youtube.com/watch?v=G4H1N_yXBiA" target="blank" >
                 <img src={image4} alt="global warming3" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Environment pollution</p>
                 </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=h198sZXP7fU" target="blank" >
                 <img src={image5} alt="global warming4" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Water pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=h198sZXP7fU" target="blank" >
                 <img src={image6} alt="global warming5" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Soul pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=Wrr6-W-zoaE" target="blank" >
                 <img src={image7} alt="global warming6" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Earth pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=Sp572udnPVg" target="blank" >
                 <img src={image8} alt="global warming7" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Marine pollution</p>
+                </a>
                 </div>
                 <div>
                 <img src={image9} alt="global warming8" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Environment pollution</p>
                 </div>
             </div>
             {/* </div>Contact & Social Media Information */}

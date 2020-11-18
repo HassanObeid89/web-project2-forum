@@ -102,6 +102,16 @@ body {
   color: rgb(209, 61, 86);
 }
 
+.p-title {
+  font-size: 20px;
+  color: rgb(3, 43, 3);
+}
+
+.p-title:hover {
+  font-size: 150%;
+  color: blue;
+}
+
 
 .s-img:hover {
   transform: scale(0.8); 
@@ -133,7 +143,7 @@ body {
 
 .footer li a:hover {  
   color: darkgreen;
-  font-size: 150%;
+  font-size: 120%;
 }
 
 .footer h2 {
