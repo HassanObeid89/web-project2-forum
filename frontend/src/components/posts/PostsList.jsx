@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import Post from './Post'
+import React from 'react'
+import Post from './PostCard'
 
 function PostsList({ data }) {
 
@@ -10,6 +10,8 @@ function PostsList({ data }) {
             {
                 data.map(post => <Post data={post}/>)
             }
+
+            
             
         </div>
     )

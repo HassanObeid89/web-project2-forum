@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
 
 
-function PostForm({ onSubmit }) {
+function PostCreateForm({ onCreateClick }) {
 
     const [content, setContent] = useState("");
     const [title, setTitle] = useState("");
 
+    const onCreatePostClick = () => {
+        const postData = {title, content};
+        onCreateClick(postData)
+            .then(() => {
+                setTitle("");
+                setContent("");
+            })
+    }
 
     return (
         
@@ -34,7 +42,7 @@ function PostForm({ onSubmit }) {
                         <div className="form-group">
                             <button
                                 className="btn btn-info"
-                                onClick={ e => onSubmit({ content, title })}>
+                            onClick={onCreatePostClick}>
                                 Post
                             </button>
                         </div>
@@ -45,4 +53,4 @@ function PostForm({ onSubmit }) {
     )
 }
 
-export default PostForm
+export default PostCreateForm
