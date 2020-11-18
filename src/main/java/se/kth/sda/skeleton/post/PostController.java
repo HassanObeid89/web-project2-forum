@@ -2,8 +2,12 @@ package se.kth.sda.skeleton.post;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import se.kth.sda.skeleton.auth.AuthService;
+import se.kth.sda.skeleton.user.User;
+import se.kth.sda.skeleton.user.UserService;
 
 import java.util.List;
 
@@ -13,6 +17,12 @@ public class PostController {
 
     @Autowired
     private PostService postService;
+
+    @Autowired
+    private AuthService authService;
+
+    @Autowired
+    private UserService userService;
 
     @GetMapping("")
     public List<Post> getAll() {
@@ -26,7 +36,12 @@ public class PostController {
     }
 
     @PostMapping("")
-    public Post create(@RequestBody Post newPost) {
+    public Post create(@RequestBody Post newPost){
+        String email = authService.getLoggedInUserEmail();
+        System.out.println(email);
+        User user = userService.findUserByEmail(email);
+
+        newPost.setUser(user);
         return postService.create(newPost);
     }
 

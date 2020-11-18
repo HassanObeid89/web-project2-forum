@@ -1,10 +1,17 @@
 import React, {useState, useEffect} from "react";
 import PostsApi from "../../api/PostsApi";
+
+
 import PostForm from "./PostForm";
 import Api from "../../api/Api";
 import PostsList from "./PostsList";
 
+
 function PostsPage() {
+    const [body, setBody] = useState(null);
+
+
+
 
     const [posts, setPosts] = useState([]);
 
@@ -28,6 +35,7 @@ function PostsPage() {
             <PostForm onSubmit= {createPost} />
             <PostsList data= {posts}/>
            
+
         </div>
     );
 }

@@ -1,27 +1,26 @@
 package se.kth.sda.skeleton.post;
 
 import se.kth.sda.skeleton.comment.Comment;
+import se.kth.sda.skeleton.user.User;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 public class Post {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     private String title;
-
 
     private String content;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
     private List<Comment> comments;
 
-
+    @ManyToOne
+    private User user;
     public Post() {
     }
 
@@ -55,5 +54,19 @@ public class Post {
         this.content = content;
     }
 
+    public List<Comment> getComments() {
+        return comments;
+    }
 
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
