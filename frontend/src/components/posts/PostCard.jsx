@@ -1,15 +1,15 @@
 import React ,{useState} from 'react'
 import PostUpdateForm from "./PostUpdateForm"
 
-function PostCard({post, onUpdateClick, onDeleteClick}) {
+function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
 
     const [isUpdating, setIsUpdating] = useState(false);
-
+    
     const handleUpdateClick = () => {
         setIsUpdating(true);
     };
 
-
+    // const userData = post.map(user => <PostCard userData={user} />)
         
 
 
@@ -18,7 +18,12 @@ function PostCard({post, onUpdateClick, onDeleteClick}) {
         :
         <div className="card">
             <div className="card-body">
+                <div>
+                    {post.user.name}
+                    {post.user.id}
+                </div>
                 <div className="card-title">
+                    
                     {post.title}
                 </div>
 
