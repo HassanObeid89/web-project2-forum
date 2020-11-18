@@ -5,6 +5,8 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import se.kth.sda.skeleton.post.Post;
+import java.util.List;
 
 @Entity
 @Table(name="account")
@@ -27,6 +29,11 @@ public class User {
     @Length(min = 3, max=100, message = "Name must be between 3-100 characters")
     @Column(name = "name")
     private String name;
+
+    //Added as part of project team-wd-3
+    @OneToMany
+    @Column(name = "postlist")
+    private List<Post> posts;
 
     // Hibernate needs a default constructor to function
     public User() {}
