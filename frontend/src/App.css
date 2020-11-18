@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Raleway:wght@100;300&display=swap');
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #2c3e50, #3498db);
+  background: linear-gradient(to right, #d6d8d6, #f8fafa);
+  font-family: 'Dosis', sans-serif;
+  
 }
 
 .App {
@@ -12,16 +15,148 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #293428;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: darkgreen;
 }
 
-.App-link {
-  color: #09d3ac;
+.nav-item {
+  
+  font-size: xx-large;
+  
+
 }
+
+.logout{
+  position: relative;
+  margin-right: 10px;
+}
+
+.img {
+  width: 120px;
+  height: 80px;
+  margin-left:40px;
+}
+
+.slogan {
+  font-size: 40px;
+  color: green;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Dosis', sans-serif;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.card-body {
+  border: solid 3px darkgreen;
+  border-radius: 10px;
+}
+
+.card-title {
+  text-align: center;
+  color: rgb(58, 29, 29);
+  font-size: 26px;
+} 
+
+.card-info {
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  color: green; 
+  
+}
+.home-banner {
+  width: 100%;
+  margin-top:10px;
+  margin-bottom:30px;
+  border-radius: 15px;
+  
+}
+
+.s-img {
+  width: 389px;
+  height:300px;
+  margin: 12px;
+  border: solid 5px darkgreen;
+  border-radius: 10px;
+}
+
+.box {
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding:0;
+  margin:0;
+  color: rgb(209, 61, 86);
+}
+
+.p-title {
+  font-size: 20px;
+  color: rgb(3, 43, 3);
+}
+
+.p-title:hover {
+  font-size: 150%;
+  color: blue;
+}
+
+
+.s-img:hover {
+  transform: scale(0.8); 
+}
+.s-img{
+  transition: transform 1s;
+}
+
+
+/* Footer */
+.footer ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin: 18px;
+  list-style: none;
+}
+
+.footer li a {
+  color: rgb(209, 61, 86);
+  text-decoration: none;
+  font-size: 25px;
+  transition: all ease-in-out 250ms;    
+}
+
+.footer li a:hover {  
+  color: darkgreen;
+  font-size: 120%;
+}
+
+.footer h2 {
+  text-align:center;
+}
+
+.footer ul {
+  /* background-color: darkblue; */
+  text-align:center;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
