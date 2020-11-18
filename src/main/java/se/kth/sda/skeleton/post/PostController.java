@@ -40,13 +40,13 @@ public class PostController {
         String email = authService.getLoggedInUserEmail();
         System.out.println(email);
         User user = userService.findUserByEmail(email);
-
         newPost.setUser(user);
         return postService.create(newPost);
     }
 
     @PutMapping("")
     public Post update(@RequestBody Post updatedPost) {
+
         return postService.update(updatedPost);
     }
 
