@@ -9,6 +9,7 @@ import PostCreateForm from "./PostCreateForm";
 function PostsPage() {
 
     const [posts, setPosts] = useState([]);
+    const [email, setEmail] = useState(null);
 
     const getAll = () => {
         Api.get("/posts")
@@ -22,9 +23,24 @@ function PostsPage() {
 
     }
 
+    useEffect (() => {
+        Api.get("/test")
+            .then(response => {
+                const email = response.data
+                setEmail(email);
+            });
+    },[]);
+
     const deletePost = (post) => {
-        Api.delete("/posts/" + post.id)
-            .then(r => getAll());
+        if (post.user.email === email) {
+            
+            Api.delete("/posts/" + post.id)
+                .then(r => getAll());
+
+        }else{
+            alert("you cant delete the post");
+        }
+    
     }
 
 
@@ -45,6 +61,7 @@ function PostsPage() {
                 posts.map(post => (<PostCard
                     key={post.id}
                     post={post}
+                    
                     onUpdateClick={updatePost}
                     onDeleteClick={deletePost}
                      />))
