@@ -15,7 +15,7 @@ function HomePage() {
         <div>
             <div className="card">
                 <div className="card-body">
-                    <h4 className="card-title">Save Earth to Save Life!</h4>
+                    <h3 className="card-title">Save Earth to Save Life!</h3>
                     <p className="card-info">
                         Climate change is the big environmental problem that humanity will face over the next decade, 
                         but it isn't the only one. We'll take a look at some of them — from water shortages and loss of 
@@ -29,36 +29,50 @@ function HomePage() {
             </div>
             <div className="box">
                 <div>
-                <img src={image2} alt="global warming1" className="s-img" />
-                <p>Environment pollution</p>
+                <a href="https://www.youtube.com/watch?v=e6rglsLy1Ys" target="blank" > 
+                <img src={image2} alt="global warming1" className="s-img" />                
+                <p className="p-title">Air pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=oJAbATJCugs" target="blank" > 
                 <img src={image3} alt="global warming2" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Global warming</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=G4H1N_yXBiA" target="blank" >
                 <img src={image4} alt="global warming3" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Environment pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=h198sZXP7fU" target="blank" >
                 <img src={image5} alt="global warming4" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Water pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=h198sZXP7fU" target="blank" >
                 <img src={image6} alt="global warming5" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Soul pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=Wrr6-W-zoaE" target="blank" >
                 <img src={image7} alt="global warming6" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Earth pollution</p>
+                </a>
                 </div>
                 <div>
+                <a href="https://www.youtube.com/watch?v=Sp572udnPVg" target="blank" >
                 <img src={image8} alt="global warming7" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Marine pollution</p>
+                </a>
                 </div>
                 <div>
                 <img src={image9} alt="global warming8" className="s-img" />
-                <p>Environment pollution</p>
+                <p className="p-title">Environment pollution</p>
                 </div>
             </div>
             {/* </div>Contact & Social Media Information */}
@@ -66,16 +80,22 @@ function HomePage() {
                 <ul className="contact-list">
                 
                     <li>
-                        <a href="https://www.instagram.com/accounts/login/" target="_blank" >
+                        <a href="https://www.instagram.com/accounts/login/" target="blank"> Instagram
                         <i className="fab fa-instagram-square"></i>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank" >
+                        <a href="https://www.facebook.com/" target="blank" > Facebook
                         <i className="fab fa-facebook"></i>
                         </a>
-                    </li>      
+                    </li>  
+                    
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=AW4q0a2lfm8/" target="blank" > Youtube
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li> 
                 </ul>    
             </footer>  
 
