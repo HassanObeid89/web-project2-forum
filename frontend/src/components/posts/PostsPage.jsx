@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 
 
 import Api from "../../api/Api";
+import CommentsPage from "../comment/CommentsPage";
 import PostCard from "./PostCard";
 import PostCreateForm from "./PostCreateForm";
 
@@ -66,7 +67,7 @@ function PostsPage() {
                     onDeleteClick={deletePost}
                      />))
             }           
-
+            
         </div>
     );
 }

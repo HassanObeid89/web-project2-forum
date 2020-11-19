@@ -1,4 +1,5 @@
 import React ,{useState} from 'react'
+import CommentsPage from '../comment/CommentsPage';
 import PostUpdateForm from "./PostUpdateForm"
 
 function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
@@ -8,10 +9,6 @@ function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
     const handleUpdateClick = () => {
         setIsUpdating(true);
     };
-
-    // const userData = post.map(user => <PostCard userData={user} />)
-        
-
 
     return isUpdating ?
         <PostUpdateForm oldPost={post} onUpdateClick={(updatedPost) => { setIsUpdating(false); onUpdateClick(updatedPost); }} />
@@ -39,8 +36,8 @@ function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
                         className="btn btn-info" onClick={() => onDeleteClick(post)}>
                         Delete
                     </button>
-                    
-
+                
+                    <CommentsPage />
                 </div>
         </div>
     </div>
