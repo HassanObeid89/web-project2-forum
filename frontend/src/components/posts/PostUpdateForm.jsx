@@ -32,7 +32,7 @@ function PostUpdateForm({ oldPost, onUpdateClick }) {
                             className="btn btn-primary"
                             onClick={() => onUpdateClick ({...oldPost, title, content})}>
                             Save
-                            </button>
+                        </button>
                     </div>
                 </div>
             </div>

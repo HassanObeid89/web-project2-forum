@@ -159,4 +159,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.form-group button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
 

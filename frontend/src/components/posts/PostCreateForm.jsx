@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { FaRegUserCircle } from "react-icons/fa";
 
 
-function PostCreateForm({ onCreateClick }) {
+function PostCreateForm({  onCreateClick, userData }) {
 
     const [content, setContent] = useState("");
     const [title, setTitle] = useState("");
+    
 
     const onCreatePostClick = () => {
         const postData = {title, content};
@@ -15,19 +17,25 @@ function PostCreateForm({ onCreateClick }) {
             })
     }
 
+   
+
     return (
         
             <div className="card">
                 <div className="card-body">
-                    <h4 className="card-title" >What is on your mind</h4>
+                    <h4 className="card-title" >
+                    
+                    <FaRegUserCircle />
+                    {userData.name}
+                    
+                    </h4>
                     <div>
                         <div className="form-group">
-                            <label>Body</label>
+                            
                             <input
-                        
                             type="text"
                             className="form-control"
-                            placeholder="Title"
+                            placeholder="Type the title here"
                             value={title}
                             onChange={e => setTitle(e.target.value)} />
 
@@ -49,8 +57,8 @@ function PostCreateForm({ onCreateClick }) {
                     </div>
                 </div>
             </div>
-        
     )
+    
 }
 
 export default PostCreateForm
