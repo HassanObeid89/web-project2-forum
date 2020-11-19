@@ -9,7 +9,8 @@ import PostCreateForm from "./PostCreateForm";
 function PostsPage() {
 
     const [posts, setPosts] = useState([]);
-    const [email, setEmail] = useState(null);
+    const [userData, setUserData] = useState([]);
+    const  [email, setEmail] = useState("")
 
     const getAll = () => {
         Api.get("/posts")
@@ -24,12 +25,21 @@ function PostsPage() {
     }
 
     useEffect (() => {
-        Api.get("/test")
+        Api.get("/user/me")
+            .then(response => {
+                const userData = response.data
+                setUserData(userData)
+            
+            });
+    },[]);
+
+    useEffect (() => {
+        Api.get("/user/")
             .then(response => {
                 const email = response.data
                 setEmail(email);
             });
-    },[]);
+    }, []);
 
     const deletePost = (post) => {
         if (post.user.email === email) {
@@ -53,10 +63,24 @@ function PostsPage() {
         getAll();
     },[]);
 
-
+    
     return (
+       
         <div className="card">
-            <PostCreateForm  onCreateClick= {createPost} />
+            
+
+            <PostCreateForm userData={userData}  onCreateClick={createPost} />
+
+            {/* {
+                posts.map(post => (<PostCreateForm 
+                    key={post.id}
+                    post={post}
+                    // email={email}
+                    onCreateClick={createPost} />))
+                    .filter(user => (posts.user.email === email))
+                
+            } */}
+
             {
                 posts.map(post => (<PostCard
                     key={post.id}

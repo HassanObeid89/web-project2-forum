@@ -1,7 +1,10 @@
 import React ,{useState} from 'react'
 import PostUpdateForm from "./PostUpdateForm"
+import { FaRegUserCircle } from "react-icons/fa";
+import { RiDeleteBin5Line } from "react-icons/ri";
 
-function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
+
+function PostCard({post, onUpdateClick, onDeleteClick}) {
 
     const [isUpdating, setIsUpdating] = useState(false);
     
@@ -19,22 +22,24 @@ function PostCard({post, onUpdateClick, onDeleteClick, userData}) {
         <div className="card">
             <div className="card-body">
                 <div>
+                    <FaRegUserCircle />
                     {post.user.name}
-                    {post.user.id}
+                    
                 </div>
                 <div className="card-title">
                     
                     {post.title}
                 </div>
-
                 <div>
                     {post.content}
                 </div>
                 <div className="form-group">
+                    
                     <button
                         className="btn btn-info" onClick={handleUpdateClick}>
-                        update
+                        Update
                     </button>
+                    <RiDeleteBin5Line onClick={() => onDeleteClick(post)}/>
                     <button
                         className="btn btn-info" onClick={() => onDeleteClick(post)}>
                         Delete
