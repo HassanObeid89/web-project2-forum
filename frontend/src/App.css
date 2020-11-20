@@ -122,10 +122,15 @@ body {
 
 
 /* Footer */
+.footer {
+  margin-top: auto;
+  
+}
 .footer ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align:center;
 }
 
 .footer li {
@@ -150,10 +155,6 @@ body {
   text-align:center;
 }
 
-.footer ul {
-  /* background-color: darkblue; */
-  text-align:center;
-}
 
 .contact-list {
   display: grid;
@@ -181,4 +182,12 @@ body {
 card-title {
   background-color: #293428;
   color: rosybrown;
+}
+ /* Chat Page */
+
+.chat-lit {
+  font-size: 50px;
+  color: darkgreen;
+  margin-top: 100px;
+  margin-bottom: 380px;
 }
