@@ -80,13 +80,13 @@ function HomePage() {
                 <ul className="contact-list">
                 
                     <li>
-                        <a href="https://www.instagram.com/accounts/login/" target="blank"> Instagram
+                        <a href="https://https://www.instagram.com/saveearthofficial/" target="blank"> Instagram
                         <i className="fab fa-instagram-square"></i>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://www.facebook.com/" target="blank" > Facebook
+                        <a href="https://www.facebook.com/EarthAndTheEnvironment.LR/" target="blank" > Facebook
                         <i className="fab fa-facebook"></i>
                         </a>
                     </li>  

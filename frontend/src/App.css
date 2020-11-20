@@ -161,6 +161,24 @@ body {
 }
 
 /* Post Page */
-.btn-info {
+.btn-delete {
   margin-right: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-update{
+  margin-right: 5px;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+}
+.card-body {
+  background-color: aquamarine;
+  
+}
+card-title {
+  background-color: #293428;
+  color: rosybrown;
 }
