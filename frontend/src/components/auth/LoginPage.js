@@ -14,6 +14,7 @@ function LoginPage() {
 
     const register = async (registrationData) => {
         const registerSuccess = await Auth.register(registrationData);
+        console.log('richa '+registerSuccess);
         if (!registerSuccess) {
             alert("Couldn't register check credentials and try again");
         }
